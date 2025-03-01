@@ -1,0 +1,231 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Gunakan font modern */
+}
+
+body {
+  background-color: #f8f9fa; /* Warna latar belakang lembut */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff; /* Warna biru cerah */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.login-box,
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #007bff;
+}
+
+.error-msg {
+  background: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-msg {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #3498db;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: #f8f9fa;
+}
+
+.dashboard-header {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.info-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .login-box,
+  .form-box {
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
